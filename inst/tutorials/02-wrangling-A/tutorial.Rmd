@@ -67,7 +67,7 @@ Type `state.name` into the code chunk below to inspect a character vector that c
 
 ### Exercise 2
 
-Use `str_detect()` to create a vector which will be TRUE for states which contain the pattern "ana" and FALSE otherwise. The first argument to `str_detect()` should be `state.name`. The second argument set `pattern` to "ana".
+Use `str_detect()` to create a vector with value `TRUE` for states which contain the pattern "ana" and `FALSE` for those which do not The first argument to `str_detect()` should be `state.name`. The second argument set `pattern` to "ana".
 
 ```{r exercise-2-2, exercise = TRUE}
 
@@ -77,9 +77,13 @@ Use `str_detect()` to create a vector which will be TRUE for states which contai
 str_detect(..., pattern = ...)
 ```
 
+###
+
+There should be 3 `TRUE`s in your vector. 
+
 ### Exercise 3
 
-Great. Now use  `str_detect()` on `state.name` to create a vector which will be TRUE for states which contain the pattern "do" and FALSE otherwise.
+Great. Now use  `str_detect()` on `state.name` to create a vector with value `TRUE` for states which contain the pattern "do" and FALSE for those which do not.
 
 ```{r exercise-2-22, exercise = TRUE}
 
@@ -88,6 +92,7 @@ Great. Now use  `str_detect()` on `state.name` to create a vector which will be 
 ```{r exercise-2-22-hint, eval = FALSE}
 Your code should look similar to the previous question, only changing what the pattern argument is set to.
 ```
+
 
 ### Exercise 4
 

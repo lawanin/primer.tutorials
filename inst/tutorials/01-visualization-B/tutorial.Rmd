@@ -414,7 +414,7 @@ mean(voter_ages)
 
 ### Exercise 1
 
-Run `?shaming` to open the help page for the data set `shaming`. Read the description and peruse the column names. 
+Run `?trains` to open the help page for the data set `trains`. Read the description and peruse the column names. 
 
 ```{r mutate-1, exercise = TRUE}
 
@@ -426,7 +426,7 @@ When not in a tutorial, the help page appears in the lower right corner of RStud
 
 ### Exercise 2 
 
-We can also use `select()` to select columns that we want to exclude from our data. Every column that follows a `-` sign in will be excluded. Start your pipe with Use `select()` and `-` to exclude the columns `race`, `liberal`, `age`, `income`, `line`,  and `station`. 
+We can also use `select()` to select columns that we want to exclude from our data. Every column that follows a `-` sign in will be excluded. Start a new pipe with `trains`. Use `select()` and `-` to exclude the columns `race`, `liberal`, `age`, `income`, `line`,  and `station`. 
 
 ```{r mutate-2, exercise = TRUE}
 

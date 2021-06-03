@@ -978,7 +978,7 @@ Run `?nominate` to open the help page for the nominate data set.
 
 ### Exercise 2
 
-Arrange the tibble by `congress` in descending order to find the number of the most recent congress in the data set. 
+Start a new pipe with `nominate`. Arrange the tibble by `congress` in descending order to find the number of the most recent congress in the data set. 
 
 ```{r nominate-2, exercise = TRUE}
 
