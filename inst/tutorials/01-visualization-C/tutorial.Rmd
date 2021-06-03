@@ -326,7 +326,7 @@ diamonds %>%
 
 ### Exercise 4
 
-Continue your pipe and add `ggplot()`. Map `price` to the x-axis, and `carat` to the y-axis. Then, add the layer `geom_jitter()`.
+Continue your pipe and add `ggplot()`. Map `price` to the x-axis, and `carat` to the y-axis. Then, add the layer `geom_point()`.
 
 ```{r gp2-4, exercise = TRUE}
 
