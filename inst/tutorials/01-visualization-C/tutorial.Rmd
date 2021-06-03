@@ -784,7 +784,7 @@ Let's add a theme to our graph. Add the layer `theme_fivethiryeight()` to your c
 
 ### Exercise 7 
 
-To finish your plot, use `labs()` to give the graph a title, subtitle, axis labels, legned labels, and caption of your choosing.
+Finally, use `labs()` to give the graph a title, subtitle, axis labels, legned labels, and caption of your choosing.
 
 ```{r gs-7, exercise = TRUE}
 
