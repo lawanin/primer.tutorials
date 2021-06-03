@@ -1061,7 +1061,7 @@ Map `party` to `color`. Within `geom_point()` set the argument `size` to 0.8.
 
 ### Exercise 8 
 
-Within `aes()` in `ggplot(), add the argument `text` and set this equal to the function `paste`. 
+Within `aes()` in `ggplot()`, add the argument `text` and set this equal to the function `paste`. This will return an error because we haven't assigned anything to `text`. We will do this in the following exercises. 
 
 ```{r nominate-8, exercise = TRUE}
 
