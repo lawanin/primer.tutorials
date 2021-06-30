@@ -5,46 +5,23 @@
 
 #### Nuo Wen Lei
 
-Update the README page along these lines: https://education.rstudio.com/blog/2020/09/delivering-learnr-tutorials-in-a-package/. Or is it good enough? Take ownership!
+Create an instructions.html file from instructions.Rmd and make sure that it is publicly available. Do this by making it an "article"" which then magically appears at https://ppbds.github.io/primer.tutorials/.
 
-  * Instructions for removing and reinstalling.
-
-  * Instructions for running from the Tutorial pane (may need to refresh or even restart R). Or running `learnr::run_tutorial("lesson1", "tutorialpackage")`. Maybe?
-
-  * Make sure to highlight the tricks that students got stuck on in the discord.
-
-Create an instructions.html file from instructions.Rmd and make sure that it is publicly available. Do this by making it an article which then magically appears at https://ppbds.github.io/primer.tutorials/.
-
-
-Create an Add In which, for the current Rmd, changes all the code chunk names, to be what they ought to be. Tricky part: What about Submission and Information?
+Create an Add In which, for the current Rmd, changes all the code chunk names, to be what they ought to be. Tricky part: Sections titled Submission and Information should be ignored. (Or maybe it doesn't matter if they are?)
 
 Create a tutorial template for creating tutorials using Add Ins.
-
 
 Mystery of permanent objects.
 
 More functionality for downloading answers. Give students a choice: download either rds for pdf.
 
+Take a look at R constant issue in instructions.Rmd.
+
 #### Nosa
 
-* Add example which deals with summarize/mutate/whatever/you know what I mean. Add it in Wrangling. [done.]
+* Ask RStudio Community question about next CRAN release of learnr.
 
-* Fixes to Distill tutorial. [done.]
-
-* Fixes to Terminal tutorial which teach stuff that Distill tutorial depends on, like grep -F. [grep -F was the only one and it was only actually necessary for one special character ]
-
-* Can we restrict the required packages to just those from CRAN? See the DESCRIPTION file. Check out R Packages book. In particular, can we just get learnr from CRAN? [done, pipe shortcut does not work on CRAN version]
-
-* Also, in DESCRIPTION, can we remove some of the imports which are already imported by other packages. [done.]
-
-#### Becca
-
-* Fix two items with your initials in instructions.Rmd.
-
-* Edit Github tutorial to add Github, RStudio, R Markdown, R Scripts. Do the questions in the order in which I start each class. See (and copy!) how Nosa does it.
-
-
-
+* Discuss new idea for testing.
 
 
 ### Tutorials to add
@@ -60,6 +37,8 @@ More functionality for downloading answers. Give students a choice: download eit
 * A "map" tutorial which starts by assuming the existence of the needed map data and then does the same map plots as in the appendix.
 
 * An rtweet tutorial: https://github.com/ropensci/rtweet
+
+* A permutation tests tutorial.
 
 
 ### To discuss
