@@ -2093,7 +2093,6 @@ bison_plot_api
 file.remove("Rplots.pdf")
 ```
 
-
 ## Submit
 
 ```{r context = "setup"}

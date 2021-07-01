@@ -1,6 +1,7 @@
 library(primer.tutorials)
 library(tidyverse)
 library(stringr)
+library(learnr)
 library(fs)
 library(rprojroot)
 
@@ -24,6 +25,11 @@ files <- fs::dir_ls("../../",
 
 stopifnot(length(files) > 15)
 
+# y <- files %>%
+#   as_tibble() %>%
+#   filter(str_detect(value, "inst") == TRUE,
+#          str_detect(value, "src") == FALSE)
+
 
 # There are two problems with this list of files. First, it is long! There are a
 # lot of tutorials and they take a while to run. There is not a lot to be done
@@ -41,11 +47,20 @@ stopifnot(length(files) > 15)
 # pass this test because we load library(primary.tutorials) before we start the
 # test above. Maybe this is just an edge case we can ignore.
 
-for(i in files){
-  cat(paste0("Working on ", i, "\n"))
-  test_that(paste("rendering", i), {
-    expect_output(rmarkdown::render(i, output_file = "tutorial.html"),
-                  "tutorial.html")
-  })
+# for(i in files){
+#   cat(paste0("Working on ", i, "\n"))
+#   test_that(paste("rendering", i), {
+#     expect_output(rmarkdown::render(i, output_file = "tutorial.html"),
+#                   "tutorial.html")
+#   })
+# }
+
+
+x <- available_tutorials("primer.tutorials")
+
+
+for(i in x$name){
+  learnr::run_tutorial(i, "primer.tutorials")
 }
+
 
